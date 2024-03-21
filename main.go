@@ -6,7 +6,9 @@ func main() {
 	Soal1()
 }
 
+// fungsi untuk soal 1
 func Soal1() {
+	// menambahkan tim
 	LumbaLumba := Team{
 		Name: "Lumba-Lumba",
 	}
@@ -14,6 +16,7 @@ func Soal1() {
 		Name: "Koala",
 	}
 
+	// memasukkan skor untuk masing-masing tim
 	fmt.Println("Masukkan Skor untuk Tim Lumba-Lumba")
 	for i := 1; i <= 3; i++ {
 		var score int
@@ -35,7 +38,11 @@ func Soal1() {
 		}
 		Koala.Scores = append(Koala.Scores, Score(score))
 	}
+
+	// menghitung rata-rata skor untuk masing-masing tim
 	LumbaLumba.Avg = LumbaLumba.CalculateScoreAverage()
 	Koala.Avg = Koala.CalculateScoreAverage()
+
+	// memilih pemenang
 	PickAWinner(LumbaLumba, Koala)
 }
