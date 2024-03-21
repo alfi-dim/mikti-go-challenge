@@ -92,6 +92,7 @@ func (team Team) CalculateScoreAverage() float32 {
 	return float32(parsedFloat)
 }
 
+// fungsi untuk menghitung BMI
 func (person Person) CalculateBMIScore() float32 {
 	bmi := person.Mass / (person.Height * person.Height)
 

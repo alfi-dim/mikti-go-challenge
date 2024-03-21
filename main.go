@@ -48,15 +48,20 @@ func Soal1() {
 	PickAWinner(LumbaLumba, Koala)
 }
 
+// fungsi untuk soal 2
 func Soal2() {
+	// menambahkan data untuk Mark dan John
 	Mark := Person{
 		Name: "Mark",
 	}
 	John := Person{
 		Name: "John",
 	}
+
+	// membuat variabel untuk menampung informasi apakah Mark memiliki BMI lebih tinggi dari John
 	var markHigherBMI bool
 
+	// memasukkan berat badan dan tinggi badan untuk Mark
 	fmt.Print("Masukkan Berat Badan Mark: ")
 	_, err := fmt.Scan(&Mark.Mass)
 	if err != nil {
@@ -68,8 +73,10 @@ func Soal2() {
 		return
 	}
 
+	// menghitung BMI untuk Mark
 	Mark.BMI = Mark.CalculateBMIScore()
 
+	// memasukkan berat badan dan tinggi badan untuk John
 	fmt.Print("Masukkan Berat Badan John: ")
 	_, err = fmt.Scan(&John.Mass)
 	if err != nil {
@@ -81,14 +88,17 @@ func Soal2() {
 		return
 	}
 
+	// menghitung BMI untuk John
 	John.BMI = John.CalculateBMIScore()
 
+	// membandingkan BMI Mark dan John
 	if Mark.BMI > John.BMI {
 		markHigherBMI = true
 	} else {
 		markHigherBMI = false
 	}
 
+	// menampilkan hasil perbandingan BMI Mark dan John
 	if markHigherBMI {
 		fmt.Println("BMI Mark lebih tinggi dari BMI John")
 	} else {

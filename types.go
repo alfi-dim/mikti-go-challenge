@@ -10,6 +10,7 @@ type Team struct {
 	Avg    float32
 }
 
+// mendeklarasikan type Person dengan tipe data struct
 type Person struct {
 	Name   string
 	Mass   float32
