@@ -3,7 +3,14 @@ package main
 import "fmt"
 
 func main() {
+	// memanggil fungsi untuk Soal 1
+	fmt.Println("Soal 1")
 	Soal1()
+
+	fmt.Println()
+
+	// memanggil fungsi untuk Soal 2
+	fmt.Println("Soal 2")
 	Soal2()
 }
 
