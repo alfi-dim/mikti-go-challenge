@@ -9,3 +9,10 @@ type Team struct {
 	Scores []Score
 	Avg    float32
 }
+
+type Person struct {
+	Name   string
+	Mass   float32
+	Height float32
+	BMI    float32
+}

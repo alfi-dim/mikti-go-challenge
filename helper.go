@@ -91,3 +91,10 @@ func (team Team) CalculateScoreAverage() float32 {
 	parsedFloat := roundFloat(float64(averageScore), 2)
 	return float32(parsedFloat)
 }
+
+func (person Person) CalculateBMIScore() float32 {
+	bmi := person.Mass / (person.Height * person.Height)
+
+	parsedFloat := roundFloat(float64(bmi), 2)
+	return float32(parsedFloat)
+}
